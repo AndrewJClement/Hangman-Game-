@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shameless Hangman</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/stylesheet">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="row"> 
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+        
+<!-- TITLE -->  
+    <img src="./assets/images/shamelessHangman2.png" alt="Shamless Hangman" class="center-block img-responsive" id="title">
+        
+        </div>
+            </div>
+    <div class="backColor">
+            <div class="row"> 
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+        
+<!-- Instructions of the game -->
+        <div class="text-center" id="gameInstructions">
+            <p>Start Guessing! Pick a letter from A-Z!</p>
+                </div>
+        
+                    <div class="text-center">
+                        <p>Guess the word. If you don't guess correctly before all your characters on the left run out, you are a DEADBEAT FRANK GALLAGHER!</p>
+                    </div>
+        
+                </div> 
+            </div> 
+        
+        
+            <div class="row" id="gameContainer"> 
+        
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="leftColumn"> <!-- column left-->
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6" id="FrankPic">
+                            <img src="./assets/images/Frank.jpg" alt="Frank" class="center-block img-responsive imgSize" ><p class="text-center names">Frank</p>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6" id="FionaPic">
+                            <img src="./assets/images/Fiona.jpg" alt="Fiona" class="center-block img-responsive imgSize"><p class="text-center names">Fiona</p>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6" id="LipPic">
+                            <img src="./assets/images/Lip.jpg" alt="Lip" class="center-block img-responsive imgSize"><p class="text-center names">Lip</p>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-6 col-lg-6 imgDivs" id="IanPic">
+                            <img src="./assets/images/Ian.jpg" alt="Ian" class="center-block img-responsive imgSize"><p class="text-center names">Ian</p>
+                        </div>
+                    </div>	
+        
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-3 col-md-6">
+                            <img src="./assets/images/Debbie.jpg" alt="Debbie" class="center-block img-responsive imgSize" id="DebbiePic"><p class="text-center names">Debbie</p>
+                        </div>
+                        <div class="col-xs-3 col-sm-3 col-md-6">
+                            <img src="./assets/images/Carl.jpg" alt="Carl" class="center-block img-responsive imgSize" id="CarlPic"><p class="text-center names">Carl</p>
+                        </div>
+                       
+                    </div>			
+                </div> 
+        
+        
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="rightColumn"> 
+        
+        
+                    <div class="row"> 
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="currentWord"> 
+        
+                            <!-- CURRENT WORD TO BE GUESSED -->
+                                <div >
+                                    <h3>GUESS THE WORD BELOW</h3>
+                                </div>
+                                <div >
+                                    <h2 id="theWord">   </h2>
+                                </div>
+        
+                        </div> 
+                    </div> 
+        
+        
+                    <div class="row"> 
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12"> 
+        
+                            <!-- Game Stats -->
+                                <div class="row" id="winLose"> 
+        
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        <div >
+                                            <h4 id="wins">Wins:  </h4>
+                                        </div>
+                                    </div> 
+        
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+                                        <div >
+                                            <h4 id="losses">Losses:  </h4>
+                                        </div>
+                                    </div> 						
+                                </div> 
+        
+        
+                                <div>
+                                    <h4 class="text-center" id="guessesRemaining">Number of Guesses Remaining:  </h4>
+                                </div>
+        
+                                <div>
+                                    <h4 id="letterGuessed">Guessed Letters:  </h4>
+                                </div>
+                        </div> 
+                    </div> 
+            
+        
+                </div> 
+                    
+             <div class="row">
+                <div class="col-xs-12">
+                    
+                    <div class="text-center">
+                        <audio controls autoplay id="song"> 
+                             <source src="assets/images/sounds/Shameless - US.mp3" type="audio/mpeg"> 
+                        </audio> 
+                      </div> 
+                </div>
+            </div>
+        </div> 
+    </div>
+        
+        <!-- Linking JAVASCRIPT -->
+        <script type="text/javascript" src="assets/javascript/game.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,94 @@
+body {
+    background:url("../images/Theme.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    font-family: "HelveticaNeue-Bold";
+}    
+
+.backColor {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+#title {
+    margin-top: 45px; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto 
+}
+
+#gameInstructions {
+	font-size: 170%;
+	margin-top: 25px;
+}
+
+#gameContainer {
+	margin-top: 10px;
+	padding: 30px;
+}
+
+#leftColumn {
+	border: 3px solid #58beef;
+    padding: 30px;
+}
+
+#rightColumn {
+	border: 3px solid #58beef; 
+	padding: 30px;
+    height: 634px;
+    padding-bottom: 920px;
+}
+
+#Word {
+	text-align: center;
+}
+
+#theWord {
+	font-size: 160%;
+	background-color: white; 
+	line-height: 2.5;
+	border-radius: 5px;
+	margin-bottom: 20px;
+	text-align: center
+}
+
+#winLose {
+	margin: auto;
+	border: 1px dashed #58beef;
+	margin-top: 30px;
+}
+
+#wins, #losses{
+	height: 30px;
+	font-size: 160%;
+	line-height: 30px;
+}
+
+#guessesRemaining {
+	margin-top: 40px;
+	margin-bottom: 30px;
+}
+
+#letterGuessed {
+	background-color: #58beef;
+	color:black;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+}
+
+.names {
+	font-size: 100%;
+	font-weight: 700;
+	letter-spacing: 1px;
+	margin-top: 5px;
+	text-align: center;
+}
+
+#song {
+	margin-top: 30px;
+}
+
+.imgSize {
+    height: 250px;
+    width: 170px;
+}
